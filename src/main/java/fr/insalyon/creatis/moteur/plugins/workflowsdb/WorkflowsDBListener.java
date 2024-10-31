@@ -94,7 +94,7 @@ public class WorkflowsDBListener implements WorkflowListener {
                 }
                 workflowBean = new Workflow(
                     workflowID, user, WorkflowStatus.Queued,
-                    new Date(), null, null, null, null, null, null);
+                    new Date(), null, null, null, null, null, null, null);
                 workflowDAO.add(workflowBean);
             }
             logger.print(TAG + "Plugin started.");
