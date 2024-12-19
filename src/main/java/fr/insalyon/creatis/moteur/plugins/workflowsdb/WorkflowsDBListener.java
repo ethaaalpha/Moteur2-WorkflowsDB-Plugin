@@ -98,7 +98,7 @@ public class WorkflowsDBListener implements WorkflowListener {
                 workflowDAO.add(workflowBean);
             }
             logger.print(TAG + "Plugin started.");
-        } catch (java.io.IOException | WorkflowsDBDAOException ex) {
+        } catch (java.io.IOException | WorkflowsDBDAOException | WorkflowsDBException ex) {
             logger.warning(TAG + "Exception initializing plugin : " + ex.getMessage(), ex);
         }
     }
